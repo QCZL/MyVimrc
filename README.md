@@ -4,8 +4,7 @@
 * `git clone https://github.com/QCZL/MyVimrc.git ~/.vim`
 * `ln -s ~/.vim/.vimrc ~/.vimrc`
 * 执行上面两句命令即可获取 vundle 插件和 .vimrc 配置文件，然后打开 VIM，在命令行模式下执行 BundleInstall 命令即可
-* 效果图如下：
-  <center>![果图](img/BundleInstall.png)<center/>
+* 效果图如下：<br>![效果图](img/BundleInstall.png)<br>
   
 ## 插件介绍
 * ### DoxygenToolkit.vim
@@ -33,58 +32,58 @@
   "12、\cu 取消注释>
   ```
 * ## flazz/vim-colorschemes
- * 插件地址 [flazz/vim-colorschemes](https://github.com/flazz/vim-colorschemes)
- * VIM 主题插件，该插件内置许多主题可供使用者选择，.vimrc.bundle 中配置如下
- ```
- set term=screen-256color
- set background=dark
- set t_Co=256
- colorscheme molokai "设置主题，可在 .vim/bundle/vim-colorschemes/colors/ 中查看已有主题"
- ```
+  * 插件地址 [flazz/vim-colorschemes](https://github.com/flazz/vim-colorschemes)
+  * VIM 主题插件，该插件内置许多主题可供使用者选择，.vimrc.bundle 中配置如下
+  ```
+  set term=screen-256color
+  set background=dark
+  set t_Co=256
+  colorscheme molokai "设置主题，可在 .vim/bundle/vim-colorschemes/colors/ 中查看已有主题"
+  ```
 * ## chxuan/change-colorscheme
- * 插件地址 [chxuan/change-colorscheme](https://github.com/chxuan/change-colorscheme)
- * 插件功能是快速切换 VIM 主题。该插件在低版本VIM上可能无法运行
- * 切换快捷键
- > - F9  查看当前主题
- > - F10 随机切换主题
- > - F11 上一个主题
- > - F12 下一个主题
+  * 插件地址 [chxuan/change-colorscheme](https://github.com/chxuan/change-colorscheme)
+  * 插件功能是快速切换 VIM 主题。该插件在低版本VIM上可能无法运行
+  * 切换快捷键
+  > - F9  查看当前主题
+  > - F10 随机切换主题
+  > - F11 上一个主题
+  > - F12 下一个主题
 * ## w0rp/ale
- * 插件地址 [w0rp/ale](https://github.com/w0rp/ale)
- * 插件功能是提供语法检查。异步工作方式，速度快，不卡顿。只支持 VIM8.0 及以上版本
- * 使用快捷键 
- > - <Leader\>s 触发/关闭语法检查
- > - 普通模式下，sp前往上一个错误或警告，sn前往下一个错误或警告
- > - <Leader\>d 查看错误或警告的详细信息
- * 效果图 <br> ![ale](img/ale.gif)<br>
+  * 插件地址 [w0rp/ale](https://github.com/w0rp/ale)
+  * 插件功能是提供语法检查。异步工作方式，速度快，不卡顿。只支持 VIM8.0 及以上版本
+  * 使用快捷键 
+  > - <Leader\>s 触发/关闭语法检查
+  > - 普通模式下，sp前往上一个错误或警告，sn前往下一个错误或警告
+  > - <Leader\>d 查看错误或警告的详细信息
+  * 效果图 <br> ![ale](img/ale.gif)<br>
 * ## vim-syntastic/syntastic
- * 插件地址 [vim-syntastic/syntastic](https://github.com/vim-syntastic/syntastic)
- * 插件功能是提供语法检查，相比 ale 速度稍慢。但是支持 VIM8.0 一下版本
- * 可是使用 F4 快速 触发/关闭 此功能 <br> ![syntastic](img/syntastic.png) <br>
+  * 插件地址 [vim-syntastic/syntastic](https://github.com/vim-syntastic/syntastic)
+  * 插件功能是提供语法检查，相比 ale 速度稍慢。但是支持 VIM8.0 一下版本
+  * 可是使用 F4 快速 触发/关闭 此功能 <br> ![syntastic](img/syntastic.png) <br>
 * ## majutsushi/tagbar
- * 插件地址 [tagbar](https://github.com/majutsushi/tagbar)
- * 插件功能是在代码文件右侧生成 变量区，可快速定位。
- * 本配置默认不展示变量区。可以使用快捷键 F8 触发/关闭。<br>![tagbar](img/tagbar.png) <br>
+  * 插件地址 [tagbar](https://github.com/majutsushi/tagbar)
+  * 插件功能是在代码文件右侧生成 变量区，可快速定位。
+  * 本配置默认不展示变量区。可以使用快捷键 F8 触发/关闭。<br>![tagbar](img/tagbar.png) <br>
 * ## jiangmiao/auto-pairs
- * 插件地址 [auto-pairs](https://github.com/jiangmiao/auto-pairs)
- * 插件功能是自动匹配并生成 [] "" '' {} 等符号。
+  * 插件地址 [auto-pairs](https://github.com/jiangmiao/auto-pairs)
+  * 插件功能是自动匹配并生成 [] "" '' {} 等符号。
 * ## scrooloose/nerdtree
- * 插件地址 [nerdtree](https://github.com/scrooloose/nerdtree)
- * 插件功能是在代码左侧生成文件树，方便进行文件跳转。
- * 本配置默认不显示文件树。在普通模式下可以使用 ctrl + n 触发/关闭 文件树。<br>![nerdtree](img/nerdtree.png)<br>
+  * 插件地址 [nerdtree](https://github.com/scrooloose/nerdtree)
+  * 插件功能是在代码左侧生成文件树，方便进行文件跳转。
+  * 本配置默认不显示文件树。在普通模式下可以使用 ctrl + n 触发/关闭 文件树。<br>![nerdtree](img/nerdtree.png)<br>
 * ## haya14busa/incsearch.vim
- * 插件地址 [incsearch.vim](https://github.com/haya14busa/incsearch.vim)
- * 此插件可以取代 VIM 默认的文本搜索功能 / ，?
- * 效果图 <br> ![incsearch](img/incsearch-fuzzy.gif) <br>
+  * 插件地址 [incsearch.vim](https://github.com/haya14busa/incsearch.vim)
+  * 此插件可以取代 VIM 默认的文本搜索功能 / ，?
+  * 效果图 <br> ![incsearch](img/incsearch-fuzzy.gif) <br>
 * ## maciakl/vim-neatstatus
- * 插件地址 [vim-neatstatus](https://github.com/maciakl/vim-neatstatus)
- * VIM 状态栏美化插件
+  * 插件地址 [vim-neatstatus](https://github.com/maciakl/vim-neatstatus)
+  * VIM 状态栏美化插件
 * ## garbas/vim-snipmate
- * 插件地址 [vim-snipmate](https://github.com/garbas/vim-snipmate)
- * 插件功能是协助用户自动生成代码片段，提高码代码的速度。
- * 例如 C 语言中，输入 for 后按 Tab 键，即可自动生成如下代码，连续按下 Tab 键可以在 for 中的参数中跳转
-```
+  * 插件地址 [vim-snipmate](https://github.com/garbas/vim-snipmate)
+  * 插件功能是协助用户自动生成代码片段，提高码代码的速度。
+  * 例如 C 语言中，输入 for 后按 Tab 键，即可自动生成如下代码，连续按下 Tab 键可以在 for 中的参数中跳转
+ ```
 for (i = 0; i < count; i++) {
     /* code */
 }
-```
+ ```

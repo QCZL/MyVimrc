@@ -82,8 +82,8 @@
   * 插件地址 [vim-snipmate](https://github.com/garbas/vim-snipmate)
   * 插件功能是协助用户自动生成代码片段，提高码代码的速度。
   * 例如 C 语言中，输入 for 后按 Tab 键，即可自动生成如下代码，连续按下 Tab 键可以在 for 中的参数中跳转
- ```
-for (i = 0; i < count; i++) {
-    /* code */
-}
- ```
+  ```
+  for (i = 0; i < count; i++) {
+      /* code */
+  }
+  ```

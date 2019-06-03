@@ -70,6 +70,11 @@ set laststatus=2
 set cursorcolumn
 set cursorline
 
+inoremap ( ()<ESC>i
+inoremap [ []<ESC>i
+inoremap { {}<ESC>i
+inoremap < <><ESC>i
+
 " 打开文件重新回到上次退出的位置
 if has("autocmd") 
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif 

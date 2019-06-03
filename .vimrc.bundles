@@ -24,7 +24,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 " VIM主题
 Plugin 'flazz/vim-colorschemes'
 " 自动匹配括号
-Plugin 'jiangmiao/auto-pairs'
+" Plugin 'jiangmiao/auto-pairs'
 " 代码片段工具
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
@@ -135,6 +135,12 @@ let g:syntastic_warning_symbol='>'
 " auto-pairs 设置
 let g:AutoPairsFlyMode = 1
 let g:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'",'"':'"'}
+" 启用跳出多行括号对，默认为1，为0则只能跳出同一行的括号
+let g:AutoPairsMultilineClose = 1
+" 把SPACE键映射为在括号两侧添加空格，默认为1
+let g:AutoPairsMapSpace = 1
+" 把BACKSPACE键映射为删除括号对和引号，默认为1
+let g:AutoPairsMapBS = 1
 
 
 " nerdtree 设置

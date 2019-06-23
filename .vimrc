@@ -70,12 +70,13 @@ set laststatus=2
 set cursorcolumn
 set cursorline
 
-inoremap ( ()<ESC>i
-inoremap [ []<ESC>i
-inoremap { {}<ESC>i
-inoremap < <><ESC>i
-inoremap ' ''<ESC>i
-inoremap " ""<ESC>i
+" 自动补全符号
+"inoremap ( ()<ESC>i
+"inoremap [ []<ESC>i
+"inoremap { {}<ESC>i
+"inoremap < <><ESC>i
+"inoremap ' ''<ESC>i
+"inoremap " ""<ESC>i
 
 " 打开文件重新回到上次退出的位置
 if has("autocmd") 

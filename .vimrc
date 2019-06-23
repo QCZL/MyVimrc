@@ -74,6 +74,8 @@ inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
 inoremap { {}<ESC>i
 inoremap < <><ESC>i
+inoremap ' ''<ESC>i
+inoremap " ""<ESC>i
 
 " 打开文件重新回到上次退出的位置
 if has("autocmd") 
@@ -98,11 +100,11 @@ func SetTitle()
     elseif &filetype == 'python'
         call setline(1,"#!/usr/bin/env python3")
         call append(line("."),"# coding=utf-8")
-        call append(line(".")+1, "") 
+        call append(line(".")+1, "")
     elseif &filetype == 'ruby'
         call setline(1,"#!/usr/bin/env ruby")
         call append(line("."),"# encoding: utf-8")
-        call append(line(".")+1, "")
+        call append(line(".")+1, "") 
     elseif &filetype == 'mkd'
         call setline(1,"<head><meta charset=\"UTF-8\"></head>")
     else 
@@ -114,6 +116,11 @@ func SetTitle()
         call append(line(".")+4, "	> Description       : ")
         call append(line(".")+5, " ************************************************************************/") 
         call append(line(".")+6, "")
+    endif
+    if &filetype == 'java'
+        call append(line(".")+7,"public class ".expand("%:r"))
+        call append(line(".")+8,"")
+        call append(line(".")+9, "")
     endif
     if expand("%:e") == 'cpp'
         call append(line(".")+7, "#include <iostream>")
@@ -133,10 +140,15 @@ func SetTitle()
         call append(line(".")+9, "#endif")
         call append(line(".")+10, "")
     endif
-    if &filetype == 'java'
-        call append(line(".")+7,"public class ".expand("%:r"))
-        call append(line(".")+8,"")
-        call append(line(".")+9, "")
+    if expand("%:e") == 'py'
+        call append(line(".")+2, "\'\'\'") 
+        call append(line(".")+3, "Author        : chengcheng") 
+        call append(line(".")+4, "Mail          : qczl_smiling@outlook.com") 
+        call append(line(".")+5, "Created Time  : ".strftime("%c"))
+        call append(line(".")+6, "Description   : ")
+        call append(line(".")+7, "\'\'\'") 
+        call append(line(".")+8, "") 
+        call append(line(".")+9, "") 
     endif
 endfunc 
 "新建文件后，自动定位到文件末尾

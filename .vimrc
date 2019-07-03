@@ -78,6 +78,12 @@ set cursorline
 "inoremap ' ''<ESC>i
 "inoremap " ""<ESC>i
 
+
+" VIM 总是在当前目录首先查找 tags, 如果没有找到则向上级目录查找
+set tags=tags;
+set autochdir
+set tags+=~/.vim/systags
+
 " 打开文件重新回到上次退出的位置
 if has("autocmd") 
     au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif 
